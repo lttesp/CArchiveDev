@@ -1,0 +1,228 @@
+/* Clinical Archive - Infoarchive Dashboard Design */
+
+/* By: Prabhakaran M. */
+
+/* InfoArchive Colors:
+
+<----------Color Codes---------->
+Blue : #1C6BB8
+Light Blue :#2C94DD
+Mild Blue: #21A9EA
+Logo Grey : #3A4E57
+General Grey : #707070
+White: #FFFFFF 
+Dashboard background COlor : #f3f3f7
+
+*/
+
+.body {
+  font-size: .875rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+
+/*
+ * Navbar
+ */
+
+ 
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+/*
+ * Utilities
+ */
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+
+/* 
+ * Dashboard Body Background Color
+ */
+
+ .bg-dashbody{
+   background-color: #f3f3f7;
+ }
+
+/*
+ * Dashboarrd Body
+ */
+
+ .row .col-1-of-3 {
+  width: calc((100% - 2 * 6rem) / 3); 
+}
+
+.dashboard-body{
+  position: absolute;
+  
+}
+/* Dash boxes */
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1 rem;
+  padding: 1 rem;
+  text-align: center;
+  border-radius: 24px; 
+  margin: 13px;
+  box-shadow: 0 1rem 1rem rgba(58, 57, 57, 0.062);
+  transition: transform .2s;
+}
+
+.feature-box:hover{ 
+  transform: translateY(-1rem) scale(1);
+}
+
+.box-shading{
+  background-color:red;
+  border: 20px;
+  border-radius: 1px;
+  box-shadow: #333
+}
+
+.box-shading-blue{
+  background-color:blue;
+  padding: 5px;
+  border-radius: 1px;
+  box-shadow: #333
+}
+/* Timeline Rules */
+
+.tm-timeline {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1 rem;
+  padding: 1 rem;
+  text-align: center;
+  border-radius: 10px; 
+  margin: 15px;
+  box-shadow: 0 1rem 4rem rgba(58, 57, 57, 0.15);
+  transition: transform .3s;
+}
+.tm-timeline:hover{ 
+  transform: translateY(-1.5rem) scale(1.03);
+}
+
+.tm-headtext{
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 10px;
+  border:5px;
+  margin-top: 13px;
+  margin-left: 13px;
+}
+.tm-boxhead{
+  font-size: 24px;
+  padding: 10px;
+  border:5px;
+  margin-top: 13px;
+  margin-left: 13px;
+}
+
+.tm-lighttext{
+  font-size: 24px;
+  padding: 10px;
+  border:5px;
+  margin-top: 13px;
+  margin-left: 13px;
+}
+
+.tm-date{
+  font-size: 18px;
+  padding: 10px;
+  border:5px;
+  margin-top: 13px;
+  margin-left: 13px;
+  margin-bottom: 0px;
+  margin-top: -1px;
+  text-align:left;
+}
+
+.tm-subfield{
+  color: #ff0b0b;
+  font-weight: 100;
+  text-align: left;
+  font-weight: 400;
+}
+
+.subfield-row{
+  padding: 10px;
+  margin: 10px;
+  text-align: left;
+
+}
+
+/* Flaticon Icon Rules */
+
+.icon-text{ 
+  color: red; 
+  line-height: 60px;
+}
+
+.allergy-icon{
+  padding-left: 10px;
+}
+span.flaticon-allergy:before{
+  font-size:24px;
+}
+
+.head-font{
+  font-size: 24px;
+  padding-left: 10px;
+}
+
+.med-class{
+  color: orangered;
+  line-height: 60px;
+  padding-left: 10px;
+}
+
+span.flaticon-pills:before{
+  font-size: 24px;
+}
+
+
+
+/* Dashboard theme */
+
+.tb-leftalign{
+  text-align: left;
+}
+
+.tb-rightalign{
+  text-align: right;
+}
+
+.allergy-headtext{
+  font-weight:bold;
+  font-size:16px;
+}
