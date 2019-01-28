@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="../css/dashboard.css">
   <link rel="stylesheet" href="../css/style.css">
   
+  <!-- Flaticon CSS -->
+  <link href="icons/flaticon.css" rel="stylesheet">
 </head>
 
 <body>
@@ -20,48 +22,41 @@
   <nav id="menu" class="menu">
 
     <section class="menu-section">
-      <h3 class="menu-section-title">Docs</h3>
+      <h3 class="menu-section-title">Patient Summary</h3>
       <ul class="menu-section-list">
-        <li><a href="https://github.com/mango/slideout#installation" target="_blank">Installation</a></li>
-        <li><a href="https://github.com/mango/slideout#usage" target="_blank">Usage</a></li>
-        <li><a href="https://github.com/mango/slideout#api" target="_blank">API</a></li>
-        <li><a href="https://github.com/mango/slideout#npm-scripts" target="_blank">npm-scripts</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Snapshot</a></li>
+        <li><a href="#">Medications</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="#">Medical Encounters</a></li>
+        <li><a href="#">Continuity of Care</a></li>
       </ul>
     </section>
 
     <section class="menu-section">
-      <h3 class="menu-section-title">Slideout</h3>
+      <h3 class="menu-section-title">Clinical Documents</h3>
       <ul class="menu-section-list">
-        <li><a href="https://github.com/mango/slideout" target="_blank">Fork it</a></li>
-        <li><a href="https://github.com/mango/slideout/issues/new" target="_blank">Create an issue</a></li>
-        <li><a href="https://github.com/mango/slideout/releases/">Download</a></li>
-      </ul>
-    </section>
-
-    <section class="menu-section">
-      <h3 class="menu-section-title">Mango</h3>
-      <ul class="menu-section-list">
-        <li><a href="https://getmango.com" target="_blank">About Mango</a></li>
-        <li><a href="https://twitter.com/getmango" target="_blank">Follow Us</a></li>
+        <li><a href="#">Notes</a></li>
+        <li><a href="#">Radiology</a></li>
+        <li><a href="#">Test Results</a></li>
+        <li><a href="#">Cardiology</a></li>
+        <li><a href="#">Pathology</a></li>
       </ul>
     </section>
   </nav>
 
   <main id="main" class="panel">
     <header class="panel-header">
-    <button class="btn-hamburger js-slideout-toggle">
-      <span class="tooltip">Menu</span>
-    </button>
+      <button class="btn-hamburger js-slideout-toggle">
+        <span class="tooltip">Menu</span>
+      </button>
+    <!-- <img src="assets/logo.png" alt="clinical-archive-logo">  -->
     </header>
 
-    <div class="col-md-12">
-      <h1 class="h2">Dashboard Snapshot</h1>    
-    </div>
-
     <div class="col-md-12" style="background: #e9e9e9;">
+        <h1 class="dash-head">Dashboard Snapshot</h1>   
         <div class="row"> <!--  First row Starts -->
             <!-- Medications Card Starts -->
-            <div class="col-md-4 feature-box">
+            <div class="col-md-3 feature-box">
               <div class="row icon-text">
                   <span class="flaticon-pills pills-class"></span>
                   <div class="head-font">Medications</div>
@@ -148,7 +143,7 @@
         <!-- Second row Starts -->
         <div class="row"> <!--  Second row Starts -->
             <!-- Family Card Starts -->
-            <div class="col-md-4 feature-box">
+            <div class="col-md-3 feature-box">
                 <div class="row icon-text">
                   <span class="flaticon-family pills-class"></span>
                   <div class="head-font">Family History</div>
@@ -236,13 +231,13 @@
 
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js'></script>
-  <script src="../js/index.js"></script>
-  <script src="../js/bootstrap.js"></script>
-  <script src="../js/bootstrap.min.js"></script>
-  <script src="../js/popper.min.js"></script>
-  <script src="../js/slideout.min.js"></script>
-  <script src="../js/slider.js"></script>
-  <script src="../js/time.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/bootstrap.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/slideout.min.js"></script>
+  <script src="./js/slider.js"></script>
+  <script src="./js/time.js"></script>
 
 </body>
 

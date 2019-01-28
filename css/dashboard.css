@@ -26,12 +26,16 @@ Dashboard background COlor : #f3f3f7
   vertical-align: text-bottom;
 }
 
+.dash-head{
+  display: flex;
+  justify-content: start;
+  padding: 10px;
+  margin: 1rem;
+}
 
 /*
  * Navbar
  */
-
- 
 
 .navbar-brand {
   padding-top: .75rem;
@@ -103,6 +107,27 @@ Dashboard background COlor : #f3f3f7
   transform: translateY(-1rem) scale(1);
 }
 
+/* timeline card animation */
+
+.card{
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 0;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  box-shadow: 0 1rem 1rem rgba(58, 57, 57, 0.062);
+  transition:transform .2s;
+  
+}
+
+.card:hover{
+  border-color: #28a745 !important;
+  transform: translateY(-1rem) scale(1);
+}
+
 .box-shading{
   background-color:red;
   border: 20px;
@@ -130,6 +155,14 @@ Dashboard background COlor : #f3f3f7
 }
 .tm-timeline:hover{ 
   transform: translateY(-1.5rem) scale(1.03);
+  
+}
+.tm-head{
+  font-size: 24px
+}
+
+.tm-year{
+  font-size: 28px;
 }
 
 .tm-headtext{
@@ -225,4 +258,26 @@ span.flaticon-pills:before{
 .allergy-headtext{
   font-weight:bold;
   font-size:16px;
+}
+
+/* Lazy Loading Scroll Animation */
+
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s;
+}
+
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to {
+    transform: translateY(0);
+  }
 }
