@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Dashboard - Clinical Archive</title>
+  
+  <!-- <link rel='stylesheet' href='https://slideout.js.org/styles/styles.css'> -->
+  <link rel='stylesheet' href='https://slideout.js.org/styles/fonts.css'>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <link rel="stylesheet" href="../css/style.css">
+  
+  <!-- Flaticon CSS -->
+  <link href="icons/flaticon.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav id="menu" class="menu">
+
+    <section class="menu-section">
+      <h3 class="menu-section-title">Patient Summary</h3>
+      <ul class="menu-section-list">
+        <li class="nav-item"><a class="nav-link" href="index.html">Snapshot</a></li>
+        <li><a href="#">Medications</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="medical.html">Medical Encounters</a></li>
+        <li><a href="#">Continuity of Care</a></li>
+      </ul>
+    </section>
+
+    <section class="menu-section">
+      <h3 class="menu-section-title">Clinical Documents</h3>
+      <ul class="menu-section-list">
+        <li><a href="#">Notes</a></li>
+        <li><a href="#">Radiology</a></li>
+        <li><a href="#">Test Results</a></li>
+        <li><a href="#">Cardiology</a></li>
+        <li><a href="#">Pathology</a></li>
+      </ul>
+    </section>
+  </nav>
+
+  <main id="main" class="panel">
+    <header class="panel-header">
+      <button class="btn-hamburger js-slideout-toggle">
+        <span class="tooltip">Menu</span>
+      </button>
+    <!-- <img src="assets/logo.png" alt="clinical-archive-logo">  -->
+    </header>
+
+    <div class="container-fluid">
+      <div class="col-md-12">
+          <h1 class="dash-head m-2 p-2"> Medical Encounters</h1> 
+      </div>
+      <div class="col-md-12">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col w-40 float-left">Name</th>
+              <th scope="col">From Date</th>
+              <th scope="col">To Date</th>
+              <th scope="col">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="text-left"><a href="#exampleModal3" data-toggle="modal" data-target="#exampleModal3">Trinntus</a></th>
+              <td>2015-01-17</td>
+              <td>2015-10-17</td>
+              <td>Berne Hospital</td>
+            </tr>
+            
+            <tr>
+                <th scope="row" class="text-left"><a href="#exampleModal1" data-toggle="modal" data-target="#exampleModal1">Colonoscopy</a></th>
+                <td>2014-01-16</td>
+                <td>2014-08-16</td>
+                <td>Penn Hospital</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-left"><a href="#">Wrist Fracture</a></th>
+                <td>2013-02-17</td>
+                <td>2013-04-17</td>
+                <td>UCLA Hospital</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-left"><a href="#exampleModal" data-toggle="modal" data-target="#exampleModal">Meningitus</a></th>
+                <td>2013-04-27</td>
+                <td>2013-07-17</td>
+                <td>Berkeley Hospital</td>
+              </tr>
+              <tr>
+                  <th scope="row" class="text-left"><a href="#exampleModal4" data-toggle="modal" data-target="#exampleModal4">Elevated Blood Pressure</a></th>
+                  <td>2013-09-30</td>
+                  <td>2013-11-17</td>
+                  <td>UCLA Hospital</td>
+              </tr>
+              <tr>
+                  <th scope="row" class="text-left"><a href="#exampleModal5" data-toggle="modal" data-target="#exampleModal5">Chronic Headache</a></th>
+                  <td>2012-02-17</td>
+                  <td>2012-04-17</td>
+                  <td>Abrudeen Hospital</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-left"><a href="#exampleModal6" data-toggle="modal" data-target="#exampleModal6">Meningitis</a></th>
+                <td>2013-02-17</td>
+                <td>2013-04-17</td>
+                <td>Berne Hospital</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-left"><a href="#exampleModal7" data-toggle="modal" data-target="#exampleModal7">Laproscopy</a></th>
+                <td>2013-02-17</td>
+                <td>2013-04-17</td>
+                <td>Penn Hospital</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-left"><a href="#exampleModal8" data-toggle="modal" data-target="#exampleModal8">Wrist Fracture</a></th>
+                <td>2013-02-17</td>
+                <td>2013-04-17</td>
+                <td>UCLA Hospital</td>
+              </tr>
+                
+          </tbody>
+        </table>
+      </div>
+    </div>
+  
+    
+
+    <footer class="panel-footer">
+      <p></p>
+    </footer>
+  </main>
+    
+    <!-- Modal Data -->
+      <div class="modal fade" id="exampleModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index:1240;">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Encounters > Meningitis 2011-05-25 2011-06-17</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/slideout.min.js"></script>
+  <script src="./js/slider.js"></script>
+  <script src="./js/time.js"></script>
+
+</body>
+
+</html>
